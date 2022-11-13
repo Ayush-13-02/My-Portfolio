@@ -7,11 +7,11 @@ export default function Header({scrollToAbout,scrollToSkill,scrollToProject,scro
     <header className="fixed top-0 w-full clearNav z-50">
       <div className="max-w-5xl mx-auto flex flex-wrap p-5 flex-col md:flex-row">
         <div className="flex flex-row items-center justify-between p-3 md:p-1">
-          <a
+          <Link
             href="/"
             className="flex text-3xl text-white font-medium mb-4 md:mb-0 uppercase animate-bounce duration-500"
           >Ayush Sharma
-          </a>
+          </Link>
           <button
             className="text-white pb-4 cursor-pointer leading-none px-3 py-1 md:hidden outline-none focus:outline-none content-end ml-auto"
             type="button"
@@ -56,7 +56,7 @@ export default function Header({scrollToAbout,scrollToSkill,scrollToProject,scro
               Contact me
             </span>
           </div>
-          <a
+          <link
             href="https://twitter.com/"
             rel="noopener noreferrer"
             target="_blank"
@@ -76,8 +76,8 @@ export default function Header({scrollToAbout,scrollToSkill,scrollToProject,scro
                 fill="white"
               ></path>
             </svg>
-          </a>
-          <a
+          </link>
+          <Link
             data-v-54e46119=""
             href="https://github.com/"
             rel="noopener noreferrer"
@@ -102,7 +102,7 @@ export default function Header({scrollToAbout,scrollToSkill,scrollToProject,scro
                 fill="white"
               ></path>
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </header>
