@@ -9,16 +9,16 @@ export default function Main() {
                     Student in NIT Jalandhar, Full Stack Web Developer
                 </h2>
                 <div className="ml-6 text-center">
-                    <a className="inline-flex items-center py-3 font-semibold tracking-tighter transition duration-500 ease-in-out transform bg-transparent ml-11 bg-gradient-to-r from-blue-50 to-blue-50 px-10 text-md md:mt-0 focus:shadow-outline" href="/">
+                    <span className="inline-flex items-center py-3 font-semibold tracking-tighter transition duration-500 ease-in-out transform bg-transparent ml-11 bg-gradient-to-r from-blue-50 to-blue-50 px-10 text-md md:mt-0 focus:shadow-outline" href="/">
                         <div className="flex text-lg">
                             <span className="justify-center">Resume</span>
                         </div>
-                    </a>
-                    <a className="inline-flex items-center py-3 font-semibold tracking-tighter text-white transition duration-500 ease-in-out transform bg-transparent ml-11 bg-gradient-to-r from-blue-500 to-blue-800 px-14 text-md md:mt-0 focus:shadow-outline" href="/">
+                    </span>
+                    <span className="inline-flex items-center py-3 font-semibold tracking-tighter text-white transition duration-500 ease-in-out transform bg-transparent ml-11 bg-gradient-to-r from-blue-500 to-blue-800 px-14 text-md md:mt-0 focus:shadow-outline" href="/">
                         <div className="flex text-lg">
                             <span className="justify-center">Explore</span>
                         </div>
-                    </a>
+                    </span>
                 </div>
             </div>
             

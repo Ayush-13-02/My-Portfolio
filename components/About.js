@@ -1,5 +1,5 @@
 import Image from 'next/image';
-// import mypic from '../img/Photo.jpg'
+import mypic from '../img/Photo.jpg'
 
 function About() {
     return (
@@ -8,9 +8,9 @@ function About() {
                 About me
             </h2>
             <div className="container flex flex-col lg:flex-row items-center justify-center mx-auto">
-                <div className="max-w-full lg:w-1/2 p-4 lg:p-10 my-4 lg:my-12 mx-8 lg:mx-2">
-                    {/* <Image src={mypic} alt="Picture of the author" className='rounded-lg w-full' /> */}
-                    <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYaQE2_T9cdK8PauC6EUySqnrZ0Wtb6xzm3g&usqp=CAU" alt="..." className='w-full h-full'/>
+                <div className="max-w-full lg:w-1/2 p-4 lg:p-10 my-4 lg:my-12 flex justify-center">
+                    <Image src={mypic} alt="Picture of the author" className='rounded-lg h-96 mr-0 ml-auto' height="350" width="350" />
+                    {/* <Image src={mypic} alt="..." width="100%" height="100%"></Image> */}
                 </div>
                 <div className="max-w-full lg:w-1/2 my-4 lg:my-12 mx-8 lg:mx-2">
                     <p className="text-white my-5 mr-16 text-justify">
