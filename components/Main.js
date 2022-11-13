@@ -3,7 +3,7 @@ export default function Main() {
         <section className="text-gray-600 body-font">
             <div className="max-w-5xl pt-52 pb-24 mx-auto">
                 <h1 className="text-5xl lg:text-7xl text-center font-sans leading-[1.08] -tracking-tight font-bold text-white mb-6">
-                    Hey, It's me Ayush Sharma
+                    Hey, It&apos;s me Ayush Sharma
                 </h1>
                 <h2 className="lg:text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-center">
                     Student in NIT Jalandhar, Full Stack Web Developer
