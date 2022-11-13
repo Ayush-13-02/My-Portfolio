@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from 'next/link'
 export default function Header({scrollToAbout,scrollToSkill,scrollToProject,scrollToContact}) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
 
