@@ -10,7 +10,7 @@ function About() {
             <div className="container flex flex-col lg:flex-row items-center justify-center mx-auto">
                 <div className="max-w-full lg:w-1/2 p-4 lg:p-10 my-4 lg:my-12 mx-8 lg:mx-2">
                     {/* <Image src={mypic} alt="Picture of the author" className='rounded-lg w-full' /> */}
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYaQE2_T9cdK8PauC6EUySqnrZ0Wtb6xzm3g&usqp=CAU" alt="..." className='w-full h-full'/>
+                    <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYaQE2_T9cdK8PauC6EUySqnrZ0Wtb6xzm3g&usqp=CAU" alt="..." className='w-full h-full'/>
                 </div>
                 <div className="max-w-full lg:w-1/2 my-4 lg:my-12 mx-8 lg:mx-2">
                     <p className="text-white my-5 mr-16 text-justify">
