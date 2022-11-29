@@ -8,15 +8,15 @@ export default function Main() {
                 <h2 className="lg:text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-center">
                     Student in NIT Jalandhar, Full Stack Web Developer
                 </h2>
-                <div className="ml-6 text-center">
-                    <span className="inline-flex items-center py-3 font-semibold tracking-tighter transition duration-500 ease-in-out transform bg-transparent ml-11 bg-gradient-to-r from-blue-50 to-blue-50 px-10 text-md md:mt-0 focus:shadow-outline">
-                        <div className="flex text-lg">
-                            <span className="justify-center">Resume</span>
+                <div className="lg:ml-6 text-center">
+                    <span className="inline-flex shadowp text-red-500 items-center py-4 font-medium tracking-tighter transition duration-500 ease-in-out transform bg-transparent ml-11 px-10 text-md md:mt-0 focus:shadow-outline hover:bg-[#1d2023] hover:filter hover:opacity-100 hover:-translate-y-1 cursor-pointer active:translate-y-2">
+                        <div className="flex">
+                            <span className="justify-center tracking-wider">RESUME</span>
                         </div>
                     </span>
-                    <span className="inline-flex items-center py-3 font-semibold tracking-tighter text-white transition duration-500 ease-in-out transform bg-transparent ml-11 bg-gradient-to-r from-blue-500 to-blue-800 px-14 text-md md:mt-0 focus:shadow-outline">
-                        <div className="flex text-lg">
-                            <span className="justify-center">Explore</span>
+                    <span className="inline-flex shadowp text-red-500 items-center py-4 font-medium tracking-tighter transition duration-500 ease-in-out transform bg-transparent ml-11 px-10 text-md md:mt-0 focus:shadow-outline hover:bg-[#1d2023] hover:filter hover:opacity-100 hover:-translate-y-1 cursor-pointer active:translate-y-2">
+                        <div className="flex">
+                            <span className="justify-center tracking-wider uppercase">Explore</span>
                         </div>
                     </span>
                 </div>

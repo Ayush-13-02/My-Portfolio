@@ -11,7 +11,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #000000;
+  background-color: #212428;
   scroll-behavior: smooth;
 }
 
@@ -62,7 +62,7 @@ a {
 
 .clearNav {
   backdrop-filter: saturate(180%) blur(5px) !important;
-  background-color: rgba(0, 0, 0, 0.7) !important;
+  background-color: #212428 !important;
 }
 
 .fsac4 {
@@ -100,9 +100,11 @@ a {
   background-position: 0 0;
   transition-duration: 100ms;
 }
-.bgprojects:hover{
+
+.bgprojects:hover {
   animation: scroll 15s ease-in-out forwards;
 }
+
 @keyframes scroll {
   0% {
     background-position: 0 0;
@@ -123,20 +125,31 @@ a {
     padding-top: 134.7%;
   }
 }
-.photobanner { 
+
+.photobanner {
   animation: bannermove 20s linear infinite;
 }
+
 @keyframes bannermove {
   0% {
-      transform: translate(0, 0);
+    transform: translate(0, 0);
   }
+
   50% {
-      transform: translate(-400%, 0);
+    transform: translate(-400%, 0);
   }
+
   100% {
     transform: translate(0, 0);
+  }
 }
-}
+
 .scrollhide::-webkit-scrollbar {
   display: none;
+}
+
+.shadowp {
+  border-radius: 8px;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
 }

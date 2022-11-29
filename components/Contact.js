@@ -8,7 +8,7 @@ function Contact({scroll}) {
                     <h1 ref={scroll} className="py-8 md:py-16 text-6xl font-bold text-white">
                         Contact me
                     </h1>
-                    <form className="max-w-lg mx-auto mt-12">
+                    <form className="max-w-xl mx-auto mt-12 shadowp p-8">
                         <div className="flex flex-wrap -mx-3 mb-6">
                             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                                 <label className="block uppercase tracking-wide text-gray-100 text-xs font-bold mb-2" htmlFor="grid-first-name">
