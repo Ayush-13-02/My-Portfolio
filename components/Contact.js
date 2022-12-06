@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contact({scroll}) {
     return (
-        <section className="relative pb-24">
+        <section id='Contact' className="relative pb-24">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
                 <div>
                     <h1 ref={scroll} className="py-8 md:py-16 text-6xl font-bold text-white">

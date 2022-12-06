@@ -1,6 +1,6 @@
 import React from "react";
 import Link from 'next/link'
-export default function Header({ scrollToAbout, scrollToSkill, scrollToProject, scrollToContact }) {
+export default function Header() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
 
   return (
@@ -36,22 +36,22 @@ export default function Header({ scrollToAbout, scrollToSkill, scrollToProject, 
         </div>
         <div className={"md:flex flex-grow items-center justify-between" + (navbarOpen ? " flex" : " hidden")}>
           <div className="md:ml-auto md:mr-auto font-4 pt-1 md:pl-14 pl-1 flex flex-wrap items-center md:text-base text-1xl md:justify-center justify-items-start">
-            <span onClick={scrollToAbout} className="mr-11 pr-2 cursor-pointer text-gray-300 hover:text-white font-semibold tr04 active:scale-90">
+            <span className="mr-11 pr-2 cursor-pointer text-gray-300 hover:text-white font-semibold tr04 active:scale-90">
               About me
             </span>
-            <span onClick={scrollToSkill} className="mr-11 pr-2 cursor-pointer text-gray-300 hover:text-white font-semibold tr04 active:scale-90">
+            <span className="mr-11 pr-2 cursor-pointer text-gray-300 hover:text-white font-semibold tr04 active:scale-90">
               Skills
             </span>
-            <span onClick={scrollToProject} className="mr-12 pr-2 cursor-pointer text-gray-300 hover:text-white font-semibold tr04 active:scale-90">
+            <span className="mr-12 pr-2 cursor-pointer text-gray-300 hover:text-white font-semibold tr04 active:scale-90">
               Project
             </span>
-            <span onClick={scrollToContact} className="mr-5 cursor-pointer text-gray-300 hover:text-white font-semibold tr04 active:scale-90">
+            <span className="mr-5 cursor-pointer text-gray-300 hover:text-white font-semibold tr04 active:scale-90">
               Contact me
             </span>
           </div>
           <span className="mr-2">
             <Link
-              href="https://twitter.com/"
+              href="/"
               rel="noopener noreferrer"
               target="_blank"
               className="invisible md:visible"

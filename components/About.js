@@ -3,7 +3,7 @@ import mypic from '../img/Photo.jpg'
 
 function About() {
     return (
-        <div className='flex flex-col items-center justify-center'>
+        <div id='About' className='flex flex-col items-center justify-center'>
             <h2 className="py-5 mb-1 text-5xl font-semibold -tracking-tight text-center text-gray-200 lg:text-7xl duration-150 ease-in-out">
                 About me
             </h2>

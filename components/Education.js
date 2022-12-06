@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import degree from '../img/degree.png'
 
-function Education({scroll}) {
+function Education() {
     return (
-        <div ref={scroll}>
+        <div className='w-full'>
             <h2 className="my-4 mb-1 text-6xl font-semibold -tracking-tight text-center text-gray-200 lg:text-7xl duration-150 ease-in-out">
                 Education
             </h2>

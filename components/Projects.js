@@ -29,7 +29,7 @@ export default function Project() {
         }
     ]
     return (
-        <div className="ml-4 mr-2">
+        <div id="project" className="ml-4 mr-2">
             <Swiper
                 slidesPerView={1}
                 spaceBetween={30}
@@ -88,7 +88,7 @@ export default function Project() {
                                             </div>
                                             <div className="w-[90%] lg:w-7/12 flex items-center justify-center mt-4 lg:mt-0">
                                                 <div className='lg:p-16 pl-0'>
-                                                    <Image src={item.image} width="580" height="435" className='rounded-lg shadow-xl min-w-0 max-w-lg' />
+                                                    <Image src={item.image} width="580" height="435" className='rounded-lg shadow-xl min-w-0 max-w-lg' alt="..." />
                                                 </div>
                                             </div>
                                         </div>
