@@ -15,14 +15,17 @@ import { Pagination, Navigation } from "swiper";
 export default function Project() {
     const project = [
         {
+            id:1,
             Title: 'YouTube Clone using React.js and Node.js',
             points: ['Responsive', 'Theme builder', 'Certification', 'Stats &amp; reports'],
             image: p1
         }, {
+            id:2,
             Title: 'You Clone using React.js and Node.js',
             points: ['Responsive', 'Theme builder', 'Certification', 'Stats &amp; reports'],
             image: p2
         }, {
+            id:3,
             Title: 'Tube Clone using React.js and Node.js',
             points: ['Responsive', 'Theme builder', 'Certification', 'Stats &amp; reports'],
             image: p1
@@ -42,9 +45,9 @@ export default function Project() {
                 className="max-w-6xl mySwiper my-4 scroll-smooth duration-500 delay-500 shadowp m-1"
             >
                 {
-                    project.map((item, i) => {
+                    project.map((item) => {
                         return (
-                            <div key={i} className="max-w-6xl mx-auto my-16 relative">
+                            <div key={item.id} className="max-w-6xl mx-auto my-16 relative">
                                 <div className="w-full mx-auto shadowp">
                                     <SwiperSlide>
                                         <div className={"w-full flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between"}>
