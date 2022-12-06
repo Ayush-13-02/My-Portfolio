@@ -153,3 +153,27 @@ a {
   background: linear-gradient(145deg, #1e2024, #23272b);
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
 }
+.swiper-button-next{
+  width: 24px !important;
+  height: 24px !important;
+  right: 0px !important;
+  overflow: hidden;
+  color: white !important;
+  z-index: 50 !important;
+}
+.swiper-button-next:active{
+  --tw-translate-y:  2px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.swiper-button-prev {
+  width: 24px !important;
+  height: 24px !important;
+  left: 0px !important;
+  overflow: hidden;
+  color: white !important;
+  z-index: 50 !important;
+}
+.swiper-button-prev:active{
+  --tw-translate-y:  2px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}

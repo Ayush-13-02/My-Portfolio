@@ -12,7 +12,7 @@ import Image from 'next/image'
 // import required modules
 import { Pagination, Navigation } from "swiper";
 
-export default function Project() {
+export default function Test() {
     const project = [
         {
             Title: 'YouTube Clone using React.js and Node.js',
@@ -29,7 +29,7 @@ export default function Project() {
         }
     ]
     return (
-        <div className="ml-4 mr-2">
+        <>
             <Swiper
                 slidesPerView={1}
                 spaceBetween={30}
@@ -39,21 +39,21 @@ export default function Project() {
                 }}
                 navigation={true}
                 modules={[Pagination, Navigation]}
-                className="max-w-6xl mySwiper my-4 scroll-smooth duration-500 delay-500 shadowp m-1"
+                className="mySwiper my-4 scroll-smooth duration-500"
             >
                 {
                     project.map((item, i) => {
                         return (
-                            <div key={i} className="max-w-6xl mx-auto my-16 relative">
-                                <div className="w-full mx-auto shadowp">
+                            <div className="max-w-6xl mx-auto my-16 relative">
+                                <div className="w-full mx-auto">
                                     <SwiperSlide>
-                                        <div className={"w-full flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between"}>
+                                        <div key={i} className={"w-full flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between shadowp"}>
                                             <div className="w-[90%] p-4 lg:w-5/12 lg:p-16 text-gray-300">
                                                 <div className="w-full">
                                                     <h5 className="mb-8 text-3xl font-bold">
                                                         {item.Title}
                                                     </h5>
-                                                    <br/>
+                                                    <br />
                                                     <div className="text-lg">
                                                         <div className="feature-wrapper">
                                                             <div className="flex mb-2">
@@ -99,6 +99,6 @@ export default function Project() {
                     })
                 }
             </Swiper>
-        </div>
+        </>
     );
 }
