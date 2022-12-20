@@ -36,18 +36,18 @@ export default function Header() {
         </div>
         <div className={"md:flex flex-grow items-center justify-between" + (navbarOpen ? " flex" : " hidden")}>
           <div className="md:ml-auto md:mr-auto font-4 pt-1 md:pl-14 pl-1 flex flex-wrap items-center md:text-base text-1xl md:justify-center justify-items-start">
-            <span className="mr-11 pr-2 cursor-pointer text-gray-300 hover:text-white font-semibold tr04 active:scale-90">
+            <a href="#About" className="mr-11 pr-2 cursor-pointer text-gray-300 hover:text-white font-semibold tr04 active:scale-90">
               About me
-            </span>
-            <span className="mr-11 pr-2 cursor-pointer text-gray-300 hover:text-white font-semibold tr04 active:scale-90">
+            </a>
+            <a href="#Skill" className="mr-11 pr-2 cursor-pointer text-gray-300 hover:text-white font-semibold tr04 active:scale-90">
               Skills
-            </span>
-            <span className="mr-12 pr-2 cursor-pointer text-gray-300 hover:text-white font-semibold tr04 active:scale-90">
+            </a>
+            <a href="#project" className="mr-12 pr-2 cursor-pointer text-gray-300 hover:text-white font-semibold tr04 active:scale-90">
               Project
-            </span>
-            <span className="mr-5 cursor-pointer text-gray-300 hover:text-white font-semibold tr04 active:scale-90">
+            </a>
+            <a href="#Contact" className="mr-5 cursor-pointer text-gray-300 hover:text-white font-semibold tr04 active:scale-90">
               Contact me
-            </span>
+            </a>
           </div>
           <span className="mr-2">
             <Link
@@ -75,7 +75,7 @@ export default function Header() {
           <span className="ml-2">
             <Link
               data-v-54e46119=""
-              href="https://github.com/"
+              href="https://github.com/Ayush-13-02"
               rel="noopener noreferrer"
               target="_blank"
               className="pl-7 invisible md:visible"

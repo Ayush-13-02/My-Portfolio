@@ -11,17 +11,12 @@ export default function Main() {
                 <div className="lg:ml-6 text-center">
                     <span className="inline-flex shadowp text-red-500 items-center py-4 font-medium tracking-tighter transition duration-500 ease-in-out transform bg-transparent ml-11 px-10 text-md md:mt-0 focus:shadow-outline hover:bg-[#1d2023] hover:filter hover:opacity-100 hover:-translate-y-1 cursor-pointer active:translate-y-2">
                         <div className="flex">
-                            <span className="justify-center tracking-wider">RESUME</span>
-                        </div>
-                    </span>
-                    <span className="inline-flex shadowp text-red-500 items-center py-4 font-medium tracking-tighter transition duration-500 ease-in-out transform bg-transparent ml-11 px-10 text-md md:mt-0 focus:shadow-outline hover:bg-[#1d2023] hover:filter hover:opacity-100 hover:-translate-y-1 cursor-pointer active:translate-y-2">
-                        <div className="flex">
-                            <span className="justify-center tracking-wider uppercase">Explore</span>
+                            <span className="justify-center tracking-wider">Download Resume</span>
                         </div>
                     </span>
                 </div>
             </div>
-            
+
         </section>
     );
 }
