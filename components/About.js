@@ -16,8 +16,8 @@ function About() {
                 </div>
                 <div className="w-[90%] lg:w-1/2 my-4 lg:my-12 mx-8 lg:mx-2">
                     <p className="text-white lg:text-lg my-5 lg:mr-16 text-justify">
-                        I am a Full stack web developer. I am using React JS, Next JS for frontend , Django for backend, Sqlite for Database, Tailwind css, Bootstrap use as css framework. I created many applications which you can watch out on my GitHub. Recently I created a Online Libraray which I prefer to check out first.
-                    </p>
+                    Hello, I am Ayush Sharma. Currently I am doing B.Tech in Computer Science Engineering from NIT Jalandhar, Punjab. I am fullstack web developer with frontend in react framework and backend in both Node JS and Django. I am also good at Data Structures and Algorithms. I solved more than 100 problems on both leetcode and geeksforgeeks. I am 3 ⭐ coder at codechef. I have little interest in Data Science, Machine Learning and Cloud. I am working in field of web development form past 2 years and have enough knowledge to do large projects.
+                   </p>
                     <ul className="m-0 p-0 italic">
                         <li className="text-white mb-4 text-lg">
                             <span className="text-red-500 uppercase font-bold">Name : </span> Ayush Sharma
