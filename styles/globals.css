@@ -11,8 +11,12 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #212428;
   scroll-behavior: smooth;
+  background: url('../img/pic5.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 a {
@@ -62,7 +66,6 @@ a {
 
 .clearNav {
   backdrop-filter: saturate(180%) blur(5px) !important;
-  background-color: #212428 !important;
 }
 
 .fsac4 {
@@ -105,43 +108,17 @@ a {
   animation: scroll 15s ease-in-out forwards;
 }
 
-@keyframes scroll {
-  0% {
-    background-position: 0 0;
-  }
-
-  50% {
-    background-position: 0 100%;
-  }
-
-  99.9% {
-    bottom: 0;
-    padding-top: 0;
-  }
-
-  100% {
-    background-position: 100% 100%;
-    bottom: auto;
-    padding-top: 134.7%;
-  }
+.scrollwidth-4::-webkit-scrollbar {
+  width: 6px;
 }
-
-.photobanner {
-  animation: bannermove 20s linear infinite;
+.scrollwidth-4::-webkit-scrollbar-thumb {
+  background-color: #fdbb04;
+  border-radius: 4px;
 }
-
-@keyframes bannermove {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  50% {
-    transform: translate(-400%, 0);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
+.scrollwidth-4::-webkit-scrollbar-track {
+  width: 4px;
+  background-color: white;
+  color: #fdbb04;
 }
 
 .scrollhide::-webkit-scrollbar {
@@ -176,4 +153,14 @@ a {
 .swiper-button-prev:active{
   --tw-translate-y:  2px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.bg-conic-86{
+  background: conic-gradient(blue 86%, white 0%);
+}
+.bg-conic-93{
+  background: conic-gradient(blue 93.2%, white 0%);
+}
+.bg-conic-76{
+  background: conic-gradient(blue 76%, white 0%);
 }

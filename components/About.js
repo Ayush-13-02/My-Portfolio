@@ -9,7 +9,7 @@ function About() {
             </h2>
             <div className="container flex flex-col lg:flex-row items-center justify-center mx-auto">
                 <div className='w-[90%] lg:w-1/2 flex items-center justify-center mx-auto'>
-                    <div className="w-fit shadowp p-8 mr-5 lg:p-10 my-4 lg:my-12 rounded-lg">
+                    <div className="w-fit p-8 mr-5 lg:p-10 my-4 lg:my-12 rounded-lg">
                         <Image src={mypic} alt="Picture of the author" className='shadow-inner rounded-lg hover:scale-105 transition duration-500' height="350" width="340" />
                         {/* <Image src={mypic} alt="..." width="100%" height="100%"></Image> */}
                     </div>

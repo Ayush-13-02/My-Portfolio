@@ -1,6 +1,6 @@
 function Skills() {
     return (
-        <div id="Skill" className="container mx-auto">
+        <div id="Skill" className="container pt-20 mx-auto">
             <h2 className="mb-1 text-6xl font-semibold -tracking-tight text-center text-gray-200 lg:text-7xl duration-150 ease-in-out">
                 Skills
             </h2>

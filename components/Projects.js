@@ -1,106 +1,73 @@
-import React from "react";
+// import React from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+// // Import Swiper styles
+// import "swiper/css";
+// import "swiper/css/pagination";
+// import "swiper/css/navigation";
+// import { Pagination, Navigation } from "swiper";
 import p1 from '../img/p2.png';
 import p2 from '../img/p1.png';
 import Image from 'next/image'
 // import required modules
-import { Pagination, Navigation } from "swiper";
 import Link from "next/link";
+import { connectDB } from "../Utils/database";
+import Project from "../Model/Project";
 
-export default function Project() {
-    const project = [
-        {
-            id: 1,
-            link: 'https://ayush-13-02.github.io/YouTube-React/',
-            Title: 'YouTube Clone',
-            points: ['Responsive', 'Frontend with React.js', 'Backend with Node.js'],
-            image: p1
-        }, {
-            id: 2,
-            link: 'https://ayush-13-02.github.io/Tic-Tac--React/',
-            Title: 'Tic Tac Toe Game',
-            points: ['Responsive', 'React.js', 'Play with Computer or Human'],
-            image: p2
-        }, {
-            id: 3,
-            link:'#',
-            Title: 'Ebook Library',
-            points: ['Responsive', 'Django and HTML', 'Upload, download, save and preview book', 'You can do Comments and Reviews'],
-            image: p1
-        }
-    ]
+const ProjectComp = ({ ProjectData }) => {
+
+    //console.log("Projects:- ", ProjectData);
+
+    const scrollNextPage = (id) => {
+        const gallery = document.querySelector(id);
+        const gallery_scroller = gallery.querySelector('.cards');
+        gallery_scroller.scrollBy(1500, 0);
+    }
+    const scrollPrevPage = (id) => {
+        const gallery = document.querySelector(id);
+        const gallery_scroller = gallery.querySelector('.cards');
+        gallery_scroller.scrollBy(-1500, 0);
+    }
     return (
-        <div id="project" className="ml-4 mr-2">
-            <h2 className="my-12 text-6xl font-semibold -tracking-tight text-center text-gray-200 lg:text-7xl duration-150 ease-in-out">
+        <div id="project" className="container pt-20 mx-auto">
+            <h2 className="mb-1 text-6xl font-semibold -tracking-tight text-center text-gray-200 lg:text-7xl duration-150 ease-in-out">
                 Projects
             </h2>
-            <Swiper
-                slidesPerView={1}
-                spaceBetween={30}
-                loop={true}
-                pagination={{
-                    clickable: true,
-                }}
-                navigation={true}
-                modules={[Pagination, Navigation]}
-                className="max-w-6xl mySwiper my-4 scroll-smooth duration-500 delay-500 shadowp m-1"
-            >
-                {
-                    project.map((item) => {
-                        return (
-                            <div key={item.id} className="max-w-6xl mx-auto my-16 relative">
-                                <div className="w-full mx-auto shadowp">
-                                    <SwiperSlide>
-                                        <div className={"w-full flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between"}>
-                                            <div className="w-[90%] p-4 lg:w-5/12 lg:p-16 text-gray-300">
-                                                <div className="w-full">
-                                                    <h5 className="mb-8 text-3xl font-bold">
-                                                        {item.Title}
-                                                    </h5>
-                                                    <br />
-                                                    <div className="text-lg">
-                                                        <div className="feature-wrapper">
-                                                            {
-                                                                item.points.map((point, id) => {
-                                                                    return (
-                                                                        <div key={id} className="flex mb-2">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                                                            <p className='ml-2'>{point}</p>
-                                                                        </div>
-                                                                    )
-                                                                })
-                                                            }
-                                                        </div>
-                                                    </div>
-                                                    <div className="flex mt-10">
-                                                        <Link href={item.link} target="_blank">
-                                                        <span className="flex shadowp px-4 py-3 m-2 items-center justify-center text-[#ff014f] font-semibold duration-500 ease-in-out hover:bg-[#1d2023] hover:filter hover:opacity-100 hover:-translate-y-1 cursor-pointer active:translate-y-2 text-sm md:text-base">
-                                                            <span>VIEW PROJECT</span>
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-2 w-5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                                                        </span>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="w-[90%] lg:w-7/12 flex items-center justify-center mt-4 lg:mt-0">
-                                                <div className='lg:p-16 pl-0'>
-                                                    <Image src={item.image} width="480" height="400" className='flex-auto flex-grow-0 shrink-0 rounded-lg shadow-xl min-w-0 max-w-lg' alt="..." />
-                                                </div>
-                                            </div>
+            <div id="scrollcontrol" className="w-full mt-16">
+                <div className="cards w-full flex snap-x overflow-x-auto scrollhide delay-200 scroll-smooth gap-2 px-3 pt-[10px] pb-4">
+                    {
+                        ProjectData.map((item) => {
+                            return (
+                                <div key={item._id} className="shadow-inner m-8 ml-0 p-2 pb-0">
+                                    <div className="flex h-[260px] w-80 p-2 relative overflow-hidden bg-white rounded border group">
+                                        <div className="flex flex-col">
+                                            <img src={item.Picture} className="w-full h-full relative z-10" />
+                                            <h3 className="group-hover:h-auto h-0 duration-200 opacity-0 group-hover:opacity-100 group-hover:p-2 text-lg font-medium text-gray-900">{item.Name}</h3>
                                         </div>
-                                    </SwiperSlide>
+                                        <div className="flex-col group-hover:w-10 w-0 duration-200 opacity-0 group-hover:opacity-100 group-hover:m-2">
+                                            <a href={item.Deploy} className="bg-gray-200 w-8 h-8 p-2 m-1 rounded fas fa-link"></a>
+                                            <a href={item.Share} className="bg-gray-200 w-8 h-8 p-2 m-1 rounded fa-brands fa-github"></a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        )
-                    })
-                }
-            </Swiper>
+                            )
+                        })
+                    }
+                </div>
+
+                <div className='flex gap-x-2 mx-4 lg:mx-16'>
+                    <button className='w-8 h-8 flex flex-0 items-center justify-center object-cover border-2 font-extrabold rounded active:scale-[0.98] rotate-180' onClick={() => scrollPrevPage('#scrollcontrol')}>
+                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className='fill-slate-200 '><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                    </button>
+                    <button className='w-8 h-8 flex flex-0 items-center justify-center object-cover border-2 font-extrabold rounded active:scale-[0.98]' onClick={() => scrollNextPage('#scrollcontrol')}>
+                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className='fill-slate-200'><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                    </button>
+                </div>
+            </div>
         </div>
     );
 }
+
+
+export default ProjectComp;
